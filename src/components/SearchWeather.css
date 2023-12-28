@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hello{
+    font-size: 80px;
+    text-align: center;
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 2rem;
+    flex-direction: column;
+}
+.slider{
+    font-family: Verdana, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.707);
+    height: 100vh;
+    width: 100%;
+}
+@keyframes slide{
+    0%{
+        background-image: url('./img/pic1.jpg');
+    }
+    20%{
+        background-image: url('./img/pic1.jpg');
+    }
+    20.01%{
+        background-image: url('./img/pic2.jpg');
+    }
+    50%{
+        background-image: url('./img/pic2.jpg');
+    }
+    50.01%{
+        background-image: url('./img/pic3.jpg');
+    }
+    70%{
+        background-image: url('./img/pic3.jpg');
+    }
+    70.01%{
+        background-image: url('./img/pic4.jpg');
+    }
+    100%{
+        background-image: url('./img/pic4.jpg');
+    }
+}
+.card{
+    color: white;
+    background-color: black;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 30px;
+    margin: 1em;
+    padding: 6rem 4rem;
+}
+.search-icon{
+    color: white;
+    margin-left: 0px;
+    cursor: pointer;
+    background-color: #333;
+    padding: 2.2%;
+    min-height: 20px;
+    border-top-right-radius: 20px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar{
+    padding: 2%;
+    border-bottom-left-radius: 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.weather{
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 0px;
+}
+.date{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
